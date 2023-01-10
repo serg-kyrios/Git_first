@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   margin: 0px;
   height: 2000px;
@@ -92,7 +93,7 @@ body {
 }
 
 .secshion_one_car {
-  height: 1116px;
+  height: 1316px;
   width: 100%;
   background-color: none;
 }
@@ -104,6 +105,7 @@ body {
   background-size: cover;
   position: relative;
   max-height: 931px;
+  margin-bottom: 20%;
 }
 .secshion_one_car .three_ad_blocks {
   height: 356px;
@@ -125,8 +127,8 @@ body {
   display: flex;
 }
 .secshion_one_car .three_ad_blocks .advertising_first .faster {
-  width: 340px;
-  height: 340px;
+  width: 330px;
+  height: 300px;
   color: #ffffff;
   left: 30%;
 }
@@ -178,53 +180,143 @@ body {
   margin: 20px 0 0;
   font-style: normal;
   text-align: center;
+  display: flex;
+  justify-content: center; /*Центрирование по горизонтали*/
+  align-items: center; /*Центрирование по вертикали */
 }
 
 .coment {
   font-size: 1.25rem;
   font-style: italic;
   letter-spacing: 1px;
-  margin: 20px 0 0;
+  margin: 5px 0 0;
   text-align: center;
 }
 
 .rental {
   width: 340px;
-  height: 340px;
+  height: 300px;
   color: #ffffff;
   left: 30%;
 }
 
 .batter {
-  height: 340px;
+  height: 300px;
   color: #ffffff;
   left: 30%;
 }
 
 .advantage_block {
-  height: 204px;
-  background-color: #64b435;
+  height: 140px;
+  left: 24%;
+  background-position: bottom;
   display: flex;
+  justify-content: space-between;
   justify-content: center;
+  position: static;
 }
 .advantage_block .free {
-  height: 200px;
+  height: 130px;
   width: 313px;
   background-image: url("../content/img/free.png");
   background-repeat: no-repeat;
   display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
 }
 .advantage_block .dollar {
-  height: 200px;
-  width: 313px;
+  height: 130px;
+  width: 260px;
   background-image: url("../content/img/dollar.png");
   background-repeat: no-repeat;
   display: flex;
   justify-content: space-between;
+  flex-direction: row-reverse;
+  margin-left: 20px;
 }
 .advantage_block .day {
-  height: 200px;
-  width: 313px;
+  height: 130px;
+  width: 367px;
   background-image: url("../content/img/day.png");
   background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  margin-left: 20px;
+}
+
+.underlined {
+  text-decoration: underline;
+  display: flex;
+  flex-direction: column;
+}
+
+.for_text {
+  height: 40px;
+  width: 100%;
+}
+
+.bookind_box {
+  height: 300px;
+  width: 100%;
+  background-color: #354eb4;
+}
+
+.book_text {
+  height: 227px;
+  width: 70%;
+  display: flex;
+  margin: auto;
+  padding-top: 3%;
+}
+
+.button {
+  background-color: #040a35;
+  border: none;
+  color: white;
+  padding: 15px 54px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 85px 246px;
+  cursor: pointer;
+  border-radius: 95px;
+}
+
+.oll_car {
+  width: 100%;
+  height: 700px;
+}
+.oll_car .title_car {
+  height: 7px;
+  max-width: 70%;
+  display: flex;
+  margin: auto;
+  padding-top: 3%;
+}
+.oll_car .car_advertising {
+  width: 80%;
+  height: 2200px;
+  display: flex;
+  background-color: #354eb4;
+  font-style: normal;
+  text-align: center;
+}
+.oll_car .car_advertising .blu_car {
+  background-image: url("../content/img/001.jpg");
+  width: 986px;
+  height: 403px;
+}
+
+.text_title_bottom {
+  font-size: 1.87rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin: 4px 0 0;
+  font-style: normal;
+  text-align: center;
+  display: flex;
+  justify-content: center; /*Центрирование по горизонтали*/
+  align-items: center; /*Центрирование по вертикали */
 }
