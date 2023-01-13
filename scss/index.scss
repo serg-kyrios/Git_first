@@ -59,6 +59,7 @@ body {
     box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
     transition-duration: 0.25s;
     position: absolute;
+    z-index: 1;
   }
   .menu_item {
     display: block;
@@ -93,100 +94,121 @@ body {
   }
 }
 .secshion_one_car {
-  height: 1316px;
+  height: 1016px;
   // height: 50%;
   width: 100%;
   background-color: none;
 
   .one_car {
     background-image: url("../content/img/one_car.jpg");
-    height: 100%;
+    height: 657px;
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    max-height: 931px;
+    max-height: 831px;
     margin-bottom: 20%;
+    display: flex;
+    object-position: 50% 22%;
+    background-position: 50% 22%;
   }
   .three_ad_blocks {
     height: 356px;
-    width: 1140px;
-    margin: 0 auto;
-    position: absolute;
-    bottom: -20%;
-    position: absolute;
-    left: 24%;
+    width: 894px;
     background-position: bottom;
     display: flex;
-    justify-content: space-between;
-    // justify-content: center;
+    margin-top: 38%;
+    justify-content: center;
+    flex: 1;
+    max-width: 100%;
+    transition-duration: inherit;
+    position: static;
+
     .advertising_first {
-      width: 313px;
-      height: 294px;
+      width: 270px;
+      height: 270px;
       background-color: #354eb4;
-      padding: 30px 29px;
+      padding: 10px 9px;
       display: flex;
 
       .faster {
-        width: 330px;
-        height: 300px;
+        width: 270px;
+        height: 270px;
         color: #ffffff;
         left: 30%;
       }
       .credit_cart {
         background-image: url("../content/img/3.jpg");
-        width: 158px;
-        height: 104px;
+        width: 100px;
+        height: 65px;
         background-repeat: no-repeat;
         background-size: contain;
         background-repeat: no-repeat;
-        margin: 15px 71px;
+        margin: 22px 93px -7px 81px;
         padding-bottom: 10px;
       }
     }
     .advertising_second {
-      width: 313px;
-      height: 294px;
+      width: 255px;
+      height: 270px;
       background-color: #4f6057;
-      padding: 30px 29px;
+      padding: 10px 16px;
       display: flex;
+      margin-left: 3px;
       .key_car {
         background-image: url("../content/img/2.png");
-        width: 128px;
-        height: 128px;
+        width: 85px;
+        height: 85px;
         background-size: contain;
         background-repeat: no-repeat;
-        margin: 4px 93px;
+        margin: 17px 99px -4px 88px;
       }
     }
     .advertising_third {
-      width: 313px;
-      height: 294px;
+      width: 248px;
+      height: 229px;
       background-color: #975460;
-      padding: 30px 29px;
+      padding: 30px 20px;
       display: flex;
+      margin-left: 3px;
       .mini_car {
         background-image: url("../content/img/1.png");
-        width: 128px;
-        height: 128px;
+        width: 85px;
+        height: 85px;
         background-size: contain;
         background-repeat: no-repeat;
-        margin: 3px 95px;
+        margin: -3px 82px;
       }
     }
   }
 }
 .text {
-  font-size: 31px;
-  font-weight: 600;
+  font-size: 24px;
+  font-weight: 500;
   letter-spacing: 1px;
-  margin: 20px 0 0;
+  margin: 0px 0 0;
   font-style: sans-serif;
   text-align: center;
   display: flex;
   justify-content: center; /*Центрирование по горизонтали*/
   align-items: center; /*Центрирование по вертикали */
   color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  word-break: break-all;
+}
+.text_title {
+  font-size: 44px;
+  font-weight: 100;
+  letter-spacing: 1px;
+  margin: 0px 0px 0px;
+  font-style: sans-serif;
+  // text-align: center;
+  display: flex;
+  // justify-content: center; /*Центрирование по горизонтали*/
+  align-items: center; /*Центрирование по вертикали */
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  word-break: break-all;
 }
 .coment {
   font-size: 1.25rem;
@@ -195,16 +217,16 @@ body {
   margin: 5px 0 0;
   text-align: center;
   font-weight: 300;
-  
 }
 .rental {
-  width: 340px;
-  height: 300px;
+  width: 260px;
+  height: 260px;
   color: #ffffff;
   left: 30%;
 }
 .batter {
-  height: 300px;
+  height: 240px;
+  width: 260px;
   color: #ffffff;
   left: 30%;
 }
@@ -218,55 +240,73 @@ body {
   position: static;
 
   .free {
-    height: 130px;
-    width: 313px;
+    height: 65px;
+    width: 65px;
     background-image: url("../content/img/free.png");
     background-repeat: no-repeat;
     display: flex;
-    justify-content: space-between;
-    flex-direction: row-reverse;
+    justify-content: center;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    background-size: contain;
+    flex-wrap: nowrap;
+    margin-right: 15px;
   }
   .dollar {
-    height: 130px;
-    width: 260px;
+    height: 65px;
+    width: 65px;
     background-image: url("../content/img/dollar.png");
     background-repeat: no-repeat;
     display: flex;
-    justify-content: space-between;
-    flex-direction: row-reverse;
+    justify-content: center;
+    flex-direction: column-reverse;
+    align-items: flex-end;
     margin-left: 20px;
+    background-size: contain;
+    margin-right: 15px;
   }
   .day {
-    height: 130px;
-    width: 367px;
+    height: 65px;
+    width: 65px;
     background-image: url("../content/img/day.png");
     background-repeat: no-repeat;
     display: flex;
-    justify-content: space-between;
-    flex-direction: row-reverse;
+    justify-content: center;
+    flex-direction: column-reverse;
+    align-items: flex-end;
     margin-left: 20px;
+    background-size: contain;
+    margin-right: 15px;
   }
 }
 .underlined {
   text-decoration: underline;
   display: flex;
-  flex-direction: column;
+  font-style: normal;
+  font-weight: 100;
+  font-size: medium;
+  justify-content: space-evenly;
+  cursor: pointer;
 }
 .for_text {
   height: 40px;
   width: 100%;
+  margin-top: 2%;
 }
 .bookind_box {
   height: 300px;
   width: 100%;
   background-color: #3151aa;
+  padding: 50px 50px;
 }
 .book_text {
   height: 227px;
-  width: 70%;
+  width: 80%;
   display: flex;
   margin: auto;
   padding-top: 3%;
+  justify-content: center;
+  position: static;
 }
 .button {
   background-color: #3c496f;
@@ -277,7 +317,7 @@ body {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin: 85px 246px;
+  margin: 88px 51px;
   cursor: pointer;
   border-radius: 95px;
 }
@@ -293,8 +333,9 @@ body {
   }
 }
 .car_advertising {
-  width: 60%;
-  height: 1483px;
+  // width: 60%;
+  max-width: 800px;
+  height: 1824px;
   font-style: normal;
   text-align: center;
   background-position: bottom;
@@ -303,8 +344,10 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  max-inline-size: 1140px;
   margin-inline: auto;
+  margin-top: 60px;
+  // max-inline-size: 1140px;
+
   // flex-direction: row-reverse;
 
   .blu_car {
@@ -313,92 +356,140 @@ body {
     height: 184px;
     background-size: contain;
     background-repeat: no-repeat;
-    // margin: 0px 505px 0px 0px;
     text-align: center;
+    margin-top: 4%;
+    // margin: 0px 505px 0px 0px;
+
     // position: relative;
     // position: absolute;
   }
   .blu_car_second {
     width: 343px;
-    height: 445px;
+    height: 333px;
     background-size: contain;
     background-repeat: no-repeat;
-    margin: auto;
+    // margin: auto;
   }
   .purple_car {
     background-image: url("../content/img/12.jpg");
-    width: 408px;
+    width: 374px;
     height: 184px;
     background-size: contain;
     background-repeat: no-repeat;
+    text-align: center;
+    margin-top: 4%;
   }
   .purple_car_second {
-    width: 369px;
-    height: 284px;
+    width: 343px;
+    height: 333px;
     background-size: contain;
     background-repeat: no-repeat;
-    background-color: #4f6057;
+    // margin: auto;
   }
   .red_car {
     background-image: url("../content/img/xxx.jpg");
-    width: 408px;
+    width: 374px;
     height: 184px;
     background-size: contain;
     background-repeat: no-repeat;
+    text-align: center;
+    margin-top: 4%;
   }
   .red_car_second {
-    width: 369px;
-    height: 284px;
+    width: 343px;
+    height: 333px;
     background-size: contain;
     background-repeat: no-repeat;
-    background-color: #4f6057;
+    // margin: auto;
   }
   .orange_car {
     background-image: url("../content/img/13.jpg");
-    width: 408px;
+    width: 374px;
     height: 184px;
     background-size: contain;
     background-repeat: no-repeat;
+    text-align: center;
+    margin-top: 4%;
   }
   .orange_car_second {
-    width: 369px;
-    height: 284px;
+    width: 343px;
+    height: 333px;
     background-size: contain;
     background-repeat: no-repeat;
-    background-color: #4f6057;
+    // margin: auto;
   }
   .brown_car {
     background-image: url("../content/img/ghhghg.jpg");
-    width: 408px;
+    width: 374px;
     height: 184px;
     background-size: contain;
     background-repeat: no-repeat;
+    text-align: center;
+    margin-top: 4%;
   }
   .brown_car_second {
-    width: 369px;
-    height: 284px;
+    width: 343px;
+    height: 333px;
     background-size: contain;
     background-repeat: no-repeat;
-    background-color: #4f6057;
+    // margin: auto;
   }
 }
 .text_title_bottom {
   // font-stile:floor($number: 0);
-  font-size: 1.87rem;
-  font-weight: 700;
+  font-size: 2.87rem;
+  font-weight: 300;
   letter-spacing: 1px;
-  margin: 4px 0 0;
+  margin: 60px 170px 0px;
   font-style: normal;
   text-align: center;
   display: flex;
   justify-content: center; /*Центрирование по горизонтали*/
   align-items: center; /*Центрирование по вертикали */
+  word-break: break-all;
+  word-break: break-word;
+  flex-direction: row-reverse;
+}
+.title_bottom {
+  // font-stile:floor($number: 0);
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  margin: 32px 200px 0px;
+  font-style: normal;
+  text-align: center;
+  display: flex;
+  justify-content: center; /*Центрирование по горизонтали*/
+  align-items: center; /*Центрирование по вертикали */
+  font-family: italic;
+  font-weight: lighter;
+  word-break: break-word;
 }
 .announcement {
   font-size: 26px;
   font-weight: 500;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Times New Roman", Times, serif;
   text-align: left;
+  word-break: break-all;
+}
+.announcement_ziro {
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Times New Roman", Times, serif;
+  text-align: left;
+  word-break: break-word;
+  font-weight: lighter;
+}
+.box {
+  width: 198px;
+  height: 91px;
+  font-size: 26px;
+  font-weight: 500;
+  font-family: "Times New Roman", Times, serif;
+  text-align: left;
+  display: flex;
+  word-break: break-word;
+  align-items: center;
 }
 .announcement_first {
   height: 28px;
@@ -411,14 +502,14 @@ body {
     width: 16px;
     height: 16px;
     background-size: contain;
-    margin: 2px 10px;
+    margin: 6px 5px 10px 0px;
   }
   .suitcase_img {
     background-image: url("../content/img/chemodan.png");
     width: 16px;
     height: 16px;
     background-size: contain;
-    margin: 2px 10px;
+    margin: 5px 12px 4px 24px;
   }
   .announcement_plases {
     font-size: 18px;
@@ -429,11 +520,7 @@ body {
     display: flex;
   }
 }
-// .announcement_second {
-//   height: 26px;
-//   width: 445px;
-//   margin: 16px 0px 0px;
-// }
+
 .announcement_third {
   height: 153px;
   width: 367px;
@@ -450,13 +537,27 @@ body {
   background-color: #3151aa;
   border: none;
   color: white;
-  padding: 10px 102px;
+  padding: 9px 93px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin: 3px 162px 15px 3px;
+  margin: 3px 162px 15px 0px;
   cursor: pointer;
   border-radius: 95px;
   white-space: nowrap;
+}
+
+@media screen and (max-width: 768px) {
+  .three_ad_blocks {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 65%;
+    width: 355%;
+    width: 710px;
+
+  }
+  .one_car {
+    height: 500%;
+  }
 }
