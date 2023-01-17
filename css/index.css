@@ -1,7 +1,7 @@
 @charset "UTF-8";
 body {
   margin: 0px;
-  height: 2000px;
+  height: 3000px;
 }
 
 .header {
@@ -94,7 +94,7 @@ body {
 }
 
 .secshion_one_car {
-  height: 1016px;
+  height: 820px;
   width: 100%;
   background-color: none;
 }
@@ -119,24 +119,25 @@ body {
   width: 894px;
   background-position: bottom;
   display: flex;
-  margin-top: 38%;
   justify-content: center;
   flex: 1;
   max-width: 100%;
   transition-duration: inherit;
   top: 0px;
   min-height: 336px;
+  margin: 555px auto 0;
 }
 .secshion_one_car .three_ad_blocks .advertising_first {
   width: 270px;
   height: 270px;
   background-color: #354eb4;
-  padding: 10px 9px;
+  padding: 27px 4px;
   display: flex;
+  margin-bottom: 4px;
 }
 .secshion_one_car .three_ad_blocks .advertising_first .faster {
-  width: 270px;
-  height: 270px;
+  width: 261px;
+  height: 227px;
   color: #ffffff;
   left: 30%;
 }
@@ -151,12 +152,13 @@ body {
   padding-bottom: 10px;
 }
 .secshion_one_car .three_ad_blocks .advertising_second {
-  width: 255px;
+  width: 267px;
   height: 270px;
   background-color: #4f6057;
-  padding: 10px 16px;
+  padding: 10px 0px;
   display: flex;
-  margin-left: 3px;
+  margin-left: 4px;
+  margin-bottom: 4px;
 }
 .secshion_one_car .three_ad_blocks .advertising_second .key_car {
   background-image: url("../content/img/2.png");
@@ -167,12 +169,12 @@ body {
   margin: 17px 99px -4px 88px;
 }
 .secshion_one_car .three_ad_blocks .advertising_third {
-  width: 248px;
-  height: 229px;
+  width: 264px;
+  height: 271px;
   background-color: #975460;
   padding: 30px 20px;
   display: flex;
-  margin-left: 3px;
+  margin-left: 4px;
 }
 .secshion_one_car .three_ad_blocks .advertising_third .mini_car {
   background-image: url("../content/img/1.png");
@@ -180,11 +182,11 @@ body {
   height: 85px;
   background-size: contain;
   background-repeat: no-repeat;
-  margin: -3px 82px;
+  margin: -4px 73px;
 }
 
 .text {
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 500;
   letter-spacing: 1px;
   margin: 0px 0 0;
@@ -196,6 +198,19 @@ body {
   color: #ffffff;
   font-family: Arial, Helvetica, sans-serif;
   word-break: break-all;
+}
+
+.text_contact {
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin: 0px 0 0;
+  font-style: sans-serif;
+  text-align: center;
+  display: flex;
+  justify-content: center; /*Центрирование по горизонтали*/
+  align-items: center; /*Центрирование по вертикали */
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .text_title {
@@ -229,7 +244,7 @@ body {
 
 .batter {
   height: 240px;
-  width: 260px;
+  width: 225px;
   color: #ffffff;
   left: 30%;
 }
@@ -242,6 +257,7 @@ body {
   justify-content: space-between;
   justify-content: center;
   position: static;
+  margin-top: 50px;
 }
 .advantage_block .free {
   height: 65px;
@@ -293,10 +309,30 @@ body {
   cursor: pointer;
 }
 
+.underlined_learn {
+  text-decoration: underline;
+  display: flex;
+  font-style: normal;
+  font-weight: 100;
+  font-size: medium;
+  cursor: pointer;
+}
+
+.underlined_white {
+  text-decoration: underline;
+  display: flex;
+  font-style: normal;
+  font-weight: 100;
+  font-size: medium;
+  justify-content: space-evenly;
+  cursor: pointer;
+  color: #cfd8dc;
+}
+
 .for_text {
   height: 40px;
   width: 100%;
-  margin-top: 2%;
+  margin-top: 4%;
 }
 
 .bookind_box {
@@ -307,11 +343,10 @@ body {
 }
 
 .book_text {
-  height: 227px;
+  height: 256px;
   width: 80%;
   display: flex;
   margin: auto;
-  padding-top: 3%;
   justify-content: center;
   position: static;
 }
@@ -320,7 +355,7 @@ body {
   background-color: #3c496f;
   border: none;
   color: white;
-  padding: 15px 54px;
+  padding: 12px 43px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -557,15 +592,16 @@ body {
   }
 }
 .best_offers_box {
-  height: 300px;
+  height: 381px;
   background-color: #5b6149;
   text-align: center;
   padding: 4%;
+  margin-top: 30px;
 }
 
 .offers_box {
   height: 296px;
-  width: 66%;
+  width: 82%;
   background-position: center;
   margin: auto;
 }
@@ -578,40 +614,119 @@ body {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
-  margin: 72px 51px;
+  font-size: 19px;
+  margin: 50px 34px;
   cursor: pointer;
   border-radius: 95px;
 }
 
+.learn_more_blu {
+  background-color: #354eb4;
+  border: none;
+  color: white;
+  padding: 15px 87px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 19px;
+  margin: 32px 0px;
+  cursor: pointer;
+  border-radius: 95px;
+}
+
+.learn_more_blus {
+  background-color: #354eb4;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 19px;
+  margin: 32px 0px;
+  cursor: pointer;
+  border-radius: 95px;
+  white-space: nowrap;
+  margin-top: -39px;
+}
+
+.learn_more_red {
+  background-color: white;
+  border: none;
+  padding: 15px 87px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 19px;
+  margin: 32px 0px;
+  cursor: pointer;
+  border-radius: 95px;
+  color: #945a5c;
+}
+
+.learn_more_green {
+  background-color: #5b6149;
+  border: none;
+  padding: 15px 87px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 19px;
+  margin: 32px 0px;
+  cursor: pointer;
+  border-radius: 95px;
+  color: white;
+}
+
+.learn_more_pink {
+  background-color: #945a5c;
+  border: none;
+  padding: 15px 97px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 19px;
+  margin: 32px 0px;
+  cursor: pointer;
+  border-radius: 95px;
+  color: white;
+}
+
 .rent_car {
-  height: 590px;
+  height: 500px;
 }
 .rent_car .blu_picture {
   background-color: #3151aa;
-  height: 480px;
-  width: 450px;
-  margin: 266px 253px 0px 175px;
+  height: 412px;
+  width: 560px;
+  margin: 252px 254px 96px 169px;
 }
 .rent_car .woman_picture {
   background-image: url("../content/img/woman.jpg");
-  height: 540px;
-  width: 583px;
-  margin: -592px 253px 0px 253px;
+  height: 533px;
+  width: 612px;
+  margin: -709px 253px 0px 253px;
   -o-object-position: 50% 50%;
      object-position: 50% 50%;
   z-index: 1;
-  background-size: contain;
   background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  max-height: 831px;
+  margin-bottom: 20%;
+  display: flex;
+  background-position: 50% 2%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .rent_car .rent_text {
-  height: 560px;
-  width: 450px;
-  margin: -449px 253px 0px 561px;
+  height: 534px;
+  width: 570px;
+  margin: -631px 253px 0px 806px;
   -o-object-position: 50% 50%;
      object-position: 50% 50%;
   z-index: 2;
-  background-color: #975460;
+  background-color: white;
   position: relative;
   transition-duration: inherit;
 }
@@ -620,5 +735,263 @@ body {
   width: 410px;
   background-position: center;
   margin: 3px 2px;
-  background-color: #3151aa;
+  background-color: none;
+  margin: auto;
+}
+.rent_car .title_woman {
+  font-size: 44px;
+  font-weight: 100;
+  letter-spacing: 1px;
+  margin: 0px 174px 24px 1px;
+  font-style: sans-serif;
+  display: flex;
+  align-items: center; /*Центрирование по вертикали */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif Arial, Helvetica, sans-serif;
+}
+
+.before {
+  margin: 30px 0px 24px 1px;
+  font-family: FontAwesome;
+  color: #324b4e;
+  font-size: 18px;
+  font-weight: 100;
+  letter-spacing: 1px;
+}
+
+.happy_people_box {
+  background-color: #945a5c;
+  font-style: normal;
+  text-align: center;
+  background-position: bottom;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-inline: auto;
+  margin-top: 60px;
+  margin: auto;
+}
+.happy_people_box .happy_people {
+  height: 700px;
+  width: 1300px;
+  gap: 3;
+  display: flex;
+  flex-wrap: wrap;
+  grid-gap: 30px;
+}
+.happy_people_box .happy_people .happy_women {
+  background-image: url("../content/img/hggh.jpg");
+  width: 360px;
+  height: 221px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  pointer-events: auto;
+  pointer-events: initial;
+}
+.happy_people_box .happy_people .pair {
+  background-image: url("../content/img/jhj.jpg");
+  width: 360px;
+  max-height: 221px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  pointer-events: auto;
+  pointer-events: initial;
+}
+.happy_people_box .happy_people .pair_girl {
+  background-image: url("../content/img/ghgh.jpg");
+  width: 360px;
+  height: 221px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.happy_people_box .happy_people .pair_old {
+  background-image: url("../content/img/ty.jpg");
+  width: 360px;
+  height: 221px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.happy_people_box .happy_people .pair_one {
+  background-image: url("../content/img/fg.jpg");
+  width: 360px;
+  height: 221px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.happy_people_box .happy_people .pair_none {
+  background-image: url("../content/img/ghghh.jpg");
+  width: 360px;
+  height: 221px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.happy_people_box .info_title {
+  height: 94px;
+}
+.happy_people_box .info_text {
+  height: 100px;
+  width: 60%;
+  margin-top: 40px;
+}
+
+.red_black_cars {
+  height: 860px;
+  max-width: 800px;
+  font-style: normal;
+  text-align: center;
+  background-position: bottom;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-inline: auto;
+  margin-top: 60px;
+}
+.red_black_cars .cars {
+  background-image: url("../content/img/fxgdf.jpg");
+  width: 920px;
+  height: 395px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 54px auto 0;
+  -o-object-position: 50% 9%;
+     object-position: 50% 9%;
+  background-color: aliceblue;
+  background-size: contain;
+  z-index: 1;
+  position: absolute;
+}
+
+.animaition {
+  background-color: #5b6149;
+  height: 450px;
+  width: 1900px;
+  will-change: auto;
+  -webkit-animation-duration: 1500ms;
+          animation-duration: 1500ms;
+  margin-top: 10%;
+  position: relative;
+}
+
+.contact_box {
+  height: 381px;
+  max-width: 1078px;
+  font-style: normal;
+  text-align: center;
+  background-position: bottom;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-inline: auto;
+  margin-top: 60px;
+}
+.contact_box .all_contact_box {
+  height: 400px;
+  display: flex;
+}
+.contact_box .all_contact_box .one_contact_box {
+  height: 380px;
+  width: 360px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 30px;
+}
+.contact_box .all_contact_box .two_contact_box {
+  height: 380px;
+  width: 360px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+.contact_box .all_contact_box .three_contact_box {
+  height: 380px;
+  width: 360px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+form {
+  width: auto;
+  float: right;
+  margin-right: 30px;
+}
+
+input {
+  width: 358px;
+  height: 52px;
+  padding-left: 15px;
+  border-radius: 42px;
+  border: 2px solid #324b4e;
+  background: #cbcbc6;
+  outline: none;
+  position: relative;
+  transition: 0.3s linear;
+  margin: 0% 5% 4% 4%;
+}
+
+input:focus {
+  width: 300px;
+}
+
+button {
+  width: 42px;
+  height: 42px;
+  background: none;
+  border: none;
+  position: absolute;
+  top: -2px;
+  right: 0;
+}
+
+button:before {
+  content: "\f002";
+  font-family: FontAwesome;
+  color: #324b4e;
+}
+
+.whatsapp_img {
+  background-image: url(../content/img/73.png);
+  width: 64px;
+  height: 64px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.live_img {
+  background-image: url(../content/img/74.png);
+  width: 64px;
+  height: 64px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.Sample_text {
+  height: 123px;
+  background-color: #5b6149;
+}
+
+.website {
+  height: 123px;
+  background-color: rgb(51, 51, 51);
+}
+
+.sampie_end_text {
+  height: 140px;
+  width: 50%;
+  margin: 0px auto 0px;
+  border-top: 40px;
+  display: flex;
 }
