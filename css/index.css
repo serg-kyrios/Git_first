@@ -7,6 +7,7 @@ body {
 .header {
   width: 100%;
   height: 3%;
+  margin-top: 0%;
 }
 .header .logo {
   background-image: url("../content/img/default-logo.png");
@@ -20,7 +21,7 @@ body {
   align-items: center;
   position: absolute;
   top: 25px;
-  right: 14%;
+  right: 15%;
   width: 26px;
   height: 26px;
   cursor: pointer;
@@ -100,7 +101,7 @@ body {
 }
 .secshion_one_car .one_car {
   background-image: url("../content/img/one_car.jpg");
-  height: 657px;
+  height: 744px;
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -108,11 +109,11 @@ body {
   max-height: 831px;
   margin-bottom: 20%;
   display: flex;
-  -o-object-position: 50% 22%;
-     object-position: 50% 22%;
-  background-position: 50% 22%;
   -o-object-fit: cover;
      object-fit: cover;
+  position: absolute;
+  top: -26px;
+  left: 0px;
 }
 .secshion_one_car .three_ad_blocks {
   height: 356px;
@@ -127,7 +128,8 @@ body {
   min-height: 336px;
   margin: 555px auto 0;
 }
-.secshion_one_car .three_ad_blocks .advertising_first {
+
+.advertising_first {
   width: 270px;
   height: 270px;
   background-color: #354eb4;
@@ -135,13 +137,13 @@ body {
   display: flex;
   margin-bottom: 4px;
 }
-.secshion_one_car .three_ad_blocks .advertising_first .faster {
+.advertising_first .faster {
   width: 261px;
   height: 227px;
   color: #ffffff;
   left: 30%;
 }
-.secshion_one_car .three_ad_blocks .advertising_first .credit_cart {
+.advertising_first .credit_cart {
   background-image: url("../content/img/3.jpg");
   width: 100px;
   height: 65px;
@@ -151,7 +153,8 @@ body {
   margin: 22px 93px -7px 81px;
   padding-bottom: 10px;
 }
-.secshion_one_car .three_ad_blocks .advertising_second {
+
+.advertising_second {
   width: 267px;
   height: 270px;
   background-color: #4f6057;
@@ -160,7 +163,7 @@ body {
   margin-left: 4px;
   margin-bottom: 4px;
 }
-.secshion_one_car .three_ad_blocks .advertising_second .key_car {
+.advertising_second .key_car {
   background-image: url("../content/img/2.png");
   width: 85px;
   height: 85px;
@@ -168,7 +171,8 @@ body {
   background-repeat: no-repeat;
   margin: 17px 99px -4px 88px;
 }
-.secshion_one_car .three_ad_blocks .advertising_third {
+
+.advertising_third {
   width: 264px;
   height: 271px;
   background-color: #975460;
@@ -176,7 +180,7 @@ body {
   display: flex;
   margin-left: 4px;
 }
-.secshion_one_car .three_ad_blocks .advertising_third .mini_car {
+.advertising_third .mini_car {
   background-image: url("../content/img/1.png");
   width: 85px;
   height: 85px;
@@ -204,7 +208,7 @@ body {
   font-size: 18px;
   font-weight: 500;
   letter-spacing: 1px;
-  margin: 0px 0 0;
+  margin: 0px 50px 0;
   font-style: sans-serif;
   text-align: center;
   display: flex;
@@ -332,7 +336,7 @@ body {
 .for_text {
   height: 40px;
   width: 100%;
-  margin-top: 4%;
+  margin-top: 1%;
 }
 
 .bookind_box {
@@ -469,9 +473,9 @@ body {
 
 .text_title_bottom {
   font-size: 2.87rem;
-  font-weight: 300;
+  font-weight: 500;
   letter-spacing: 1px;
-  margin: 60px 170px 0px;
+  margin: 26px 152px 0px;
   font-style: normal;
   text-align: center;
   display: flex;
@@ -503,6 +507,7 @@ body {
   font-family: "Times New Roman", Times, serif;
   text-align: left;
   word-break: break-all;
+  margin: -4% 0% 0%;
 }
 
 .announcement_ziro {
@@ -581,6 +586,10 @@ body {
   white-space: nowrap;
 }
 
+.button_announcement:hover {
+  background-color: #0f046c;
+}
+
 @media screen and (max-width: 768px) {
   .three_ad_blocks {
     flex-direction: column;
@@ -620,11 +629,39 @@ body {
   border-radius: 95px;
 }
 
+.button:hover {
+  background-color: #0f046c;
+}
+
+.learn_more:hover {
+  background-color: #6ee419;
+}
+
+.learn_more_blu:hover {
+  background-color: #0f046c;
+}
+
+.learn_more_blus:hover {
+  background-color: #0f046c;
+}
+
+.learn_more_green:hover {
+  background-color: #042b04;
+}
+
+.learn_more_pink:hover {
+  background-color: #aa3434;
+}
+
+.learn_more_red:hover {
+  background-color: #d28989;
+}
+
 .learn_more_blu {
   background-color: #354eb4;
   border: none;
   color: white;
-  padding: 15px 87px;
+  padding: 15px 80px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -638,7 +675,7 @@ body {
   background-color: #354eb4;
   border: none;
   color: white;
-  padding: 15px 32px;
+  padding: 18px 1px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -647,7 +684,7 @@ body {
   cursor: pointer;
   border-radius: 95px;
   white-space: nowrap;
-  margin-top: -39px;
+  margin-top: -34px;
 }
 
 .learn_more_red {
@@ -667,7 +704,7 @@ body {
 .learn_more_green {
   background-color: #5b6149;
   border: none;
-  padding: 15px 87px;
+  padding: 19px 77px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -681,7 +718,7 @@ body {
 .learn_more_pink {
   background-color: #945a5c;
   border: none;
-  padding: 15px 97px;
+  padding: 19px 99px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -693,21 +730,20 @@ body {
 }
 
 .rent_car {
-  height: 500px;
+  height: 815px;
 }
 .rent_car .blu_picture {
   background-color: #3151aa;
   height: 412px;
-  width: 560px;
-  margin: 252px 254px 96px 169px;
+  width: 429px;
+  position: relative;
+  left: 201px;
+  top: 215px;
 }
 .rent_car .woman_picture {
   background-image: url("../content/img/woman.jpg");
-  height: 533px;
-  width: 612px;
-  margin: -709px 253px 0px 253px;
-  -o-object-position: 50% 50%;
-     object-position: 50% 50%;
+  height: 536px;
+  width: 473px;
   z-index: 1;
   background-repeat: no-repeat;
   background-size: cover;
@@ -718,35 +754,51 @@ body {
   background-position: 50% 2%;
   -o-object-fit: cover;
      object-fit: cover;
+  position: absolute;
+  left: 259px;
+  top: 4255px;
 }
 .rent_car .rent_text {
   height: 534px;
   width: 570px;
-  margin: -631px 253px 0px 806px;
   -o-object-position: 50% 50%;
      object-position: 50% 50%;
   z-index: 2;
   background-color: white;
   position: relative;
   transition-duration: inherit;
+  position: absolute;
+  left: 690px;
+  top: 4337px;
+  right: 0px;
 }
 .rent_car .rent_text .rent_for_text {
   height: 500px;
   width: 410px;
   background-position: center;
-  margin: 3px 2px;
+  margin: 46px 57px 2px;
   background-color: none;
-  margin: auto;
+}
+.rent_car .rent_text .rent {
+  background-position: center;
+  background-color: none;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-style: sans-serif;
 }
 .rent_car .title_woman {
   font-size: 44px;
   font-weight: 100;
   letter-spacing: 1px;
-  margin: 0px 174px 24px 1px;
   font-style: sans-serif;
+  text-align: center;
   display: flex;
+  justify-content: center; /*Центрирование по горизонтали*/
   align-items: center; /*Центрирование по вертикали */
+  color: #ffffff;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif Arial, Helvetica, sans-serif;
+  word-break: break-all;
 }
 
 .before {
@@ -772,58 +824,38 @@ body {
   margin: auto;
 }
 .happy_people_box .happy_people {
-  height: 700px;
-  width: 1300px;
+  height: 444px;
+  width: 940px;
   gap: 3;
   display: flex;
   flex-wrap: wrap;
   grid-gap: 30px;
+  align-content: flex-start;
+  margin-top: 60px;
+}
+.happy_people_box .happy_people .imidge_conteiner {
+  width: 293px;
+  height: 180px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .happy_people_box .happy_people .happy_women {
   background-image: url("../content/img/hggh.jpg");
-  width: 360px;
-  height: 221px;
-  background-repeat: no-repeat;
-  background-size: contain;
-  pointer-events: auto;
-  pointer-events: initial;
 }
 .happy_people_box .happy_people .pair {
   background-image: url("../content/img/jhj.jpg");
-  width: 360px;
-  max-height: 221px;
-  background-repeat: no-repeat;
-  background-size: contain;
-  pointer-events: auto;
-  pointer-events: initial;
 }
 .happy_people_box .happy_people .pair_girl {
   background-image: url("../content/img/ghgh.jpg");
-  width: 360px;
-  height: 221px;
-  background-repeat: no-repeat;
-  background-size: contain;
 }
 .happy_people_box .happy_people .pair_old {
   background-image: url("../content/img/ty.jpg");
-  width: 360px;
-  height: 221px;
-  background-repeat: no-repeat;
-  background-size: contain;
 }
 .happy_people_box .happy_people .pair_one {
   background-image: url("../content/img/fg.jpg");
-  width: 360px;
-  height: 221px;
-  background-repeat: no-repeat;
-  background-size: contain;
 }
 .happy_people_box .happy_people .pair_none {
   background-image: url("../content/img/ghghh.jpg");
-  width: 360px;
-  height: 221px;
-  background-repeat: no-repeat;
-  background-size: contain;
 }
 .happy_people_box .info_title {
   height: 94px;
@@ -845,12 +877,13 @@ body {
   flex-wrap: wrap;
   justify-content: space-around;
   margin-inline: auto;
-  margin-top: 60px;
+  margin-top: 6px;
+  position: relative;
 }
 .red_black_cars .cars {
   background-image: url("../content/img/fxgdf.jpg");
-  width: 920px;
-  height: 395px;
+  width: 902px;
+  height: 325px;
   background-repeat: no-repeat;
   background-size: contain;
   margin: 54px auto 0;
@@ -858,19 +891,20 @@ body {
      object-position: 50% 9%;
   background-color: aliceblue;
   background-size: contain;
-  z-index: 1;
-  position: absolute;
+  background-position: 0px 0px;
+  background-size: cover;
 }
 
 .animaition {
   background-color: #5b6149;
-  height: 450px;
-  width: 1900px;
+  height: 220px;
+  width: 1200px;
   will-change: auto;
   -webkit-animation-duration: 1500ms;
           animation-duration: 1500ms;
   margin-top: 10%;
   position: relative;
+  max-height: auto;
 }
 
 .contact_box {
@@ -930,16 +964,14 @@ form {
 }
 
 input {
-  width: 358px;
-  height: 52px;
+  width: 293px;
+  height: 65px;
   padding-left: 15px;
   border-radius: 42px;
-  border: 2px solid #324b4e;
+  border: 2px solid white;
   background: #cbcbc6;
   outline: none;
   position: relative;
-  transition: 0.3s linear;
-  margin: 0% 5% 4% 4%;
 }
 
 input:focus {
@@ -954,12 +986,6 @@ button {
   position: absolute;
   top: -2px;
   right: 0;
-}
-
-button:before {
-  content: "\f002";
-  font-family: FontAwesome;
-  color: #324b4e;
 }
 
 .whatsapp_img {

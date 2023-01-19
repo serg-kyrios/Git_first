@@ -6,7 +6,7 @@ body {
 .header {
   width: 100%;
   height: 3%;
-  //   margin-top: -4%;
+  margin-top: 0%;
   .logo {
     background-image: url("../content/img/default-logo.png");
     width: 140px;
@@ -19,7 +19,7 @@ body {
     align-items: center;
     position: absolute;
     top: 25px;
-    right: 14%;
+    right: 15%;
     width: 26px;
     height: 26px;
     cursor: pointer;
@@ -97,10 +97,9 @@ body {
   height: 820px;
   width: 100%;
   background-color: none;
-
   .one_car {
     background-image: url("../content/img/one_car.jpg");
-    height: 657px;
+    height: 744px;
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -108,9 +107,12 @@ body {
     max-height: 831px;
     margin-bottom: 20%;
     display: flex;
-    object-position: 50% 22%;
-    background-position: 50% 22%;
+    // object-position: 50% 22%;
+    // background-position: 50% 22%;
     object-fit: cover;
+    position: absolute;
+    top: -26px;
+    left: 0px;
   }
   .three_ad_blocks {
     height: 356px;
@@ -124,66 +126,67 @@ body {
     top: 0px;
     min-height: 336px;
     margin: 555px auto 0;
-
-    .advertising_first {
-      width: 270px;
-      height: 270px;
-      background-color: #354eb4;
-      padding: 27px 4px;
-      display: flex;
-      margin-bottom: 4px;
-      .faster {
-        width: 261px;
-        height: 227px;
-        color: #ffffff;
-        left: 30%;
-      }
-      .credit_cart {
-        background-image: url("../content/img/3.jpg");
-        width: 100px;
-        height: 65px;
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-repeat: no-repeat;
-        margin: 22px 93px -7px 81px;
-        padding-bottom: 10px;
-      }
-    }
-    .advertising_second {
-      width: 267px;
-      height: 270px;
-      background-color: #4f6057;
-      padding: 10px 0px;
-      display: flex;
-      margin-left: 4px;
-      margin-bottom: 4px;
-      .key_car {
-        background-image: url("../content/img/2.png");
-        width: 85px;
-        height: 85px;
-        background-size: contain;
-        background-repeat: no-repeat;
-        margin: 17px 99px -4px 88px;
-      }
-    }
-    .advertising_third {
-      width: 264px;
-      height: 271px;
-      background-color: #975460;
-      padding: 30px 20px;
-      display: flex;
-      margin-left: 4px;
-      .mini_car {
-        background-image: url("../content/img/1.png");
-        width: 85px;
-        height: 85px;
-        background-size: contain;
-        background-repeat: no-repeat;
-        margin: -4px 73px;
-      }
-    }
   }
 }
+
+.advertising_first {
+  width: 270px;
+  height: 270px;
+  background-color: #354eb4;
+  padding: 27px 4px;
+  display: flex;
+  margin-bottom: 4px;
+  .faster {
+    width: 261px;
+    height: 227px;
+    color: #ffffff;
+    left: 30%;
+  }
+  .credit_cart {
+    background-image: url("../content/img/3.jpg");
+    width: 100px;
+    height: 65px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 22px 93px -7px 81px;
+    padding-bottom: 10px;
+  }
+}
+.advertising_second {
+  width: 267px;
+  height: 270px;
+  background-color: #4f6057;
+  padding: 10px 0px;
+  display: flex;
+  margin-left: 4px;
+  margin-bottom: 4px;
+  .key_car {
+    background-image: url("../content/img/2.png");
+    width: 85px;
+    height: 85px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 17px 99px -4px 88px;
+  }
+}
+.advertising_third {
+  width: 264px;
+  height: 271px;
+  background-color: #975460;
+  padding: 30px 20px;
+  display: flex;
+  margin-left: 4px;
+  .mini_car {
+    background-image: url("../content/img/1.png");
+    width: 85px;
+    height: 85px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: -4px 73px;
+  }
+}
+
 .text {
   font-size: 18px;
   font-weight: 500;
@@ -202,7 +205,7 @@ body {
   font-size: 18px;
   font-weight: 500;
   letter-spacing: 1px;
-  margin: 0px 0 0;
+  margin: 0px 50px 0;
   font-style: sans-serif;
   text-align: center;
   display: flex;
@@ -324,7 +327,7 @@ body {
 .for_text {
   height: 40px;
   width: 100%;
-  margin-top: 4%;
+  margin-top: 1%;
 }
 .bookind_box {
   height: 300px;
@@ -378,9 +381,6 @@ body {
   justify-content: space-around;
   margin-inline: auto;
   margin-top: 60px;
-  // max-inline-size: 1140px;
-
-  // flex-direction: row-reverse;
 
   .blu_car {
     background-image: url("../content/img/001.jpg");
@@ -390,17 +390,12 @@ body {
     background-repeat: no-repeat;
     text-align: center;
     margin-top: 4%;
-    // margin: 0px 505px 0px 0px;
-
-    // position: relative;
-    // position: absolute;
   }
   .blu_car_second {
     width: 343px;
     height: 333px;
     background-size: contain;
     background-repeat: no-repeat;
-    // margin: auto;
   }
   .purple_car {
     background-image: url("../content/img/12.jpg");
@@ -416,7 +411,6 @@ body {
     height: 333px;
     background-size: contain;
     background-repeat: no-repeat;
-    // margin: auto;
   }
   .red_car {
     background-image: url("../content/img/xxx.jpg");
@@ -432,7 +426,6 @@ body {
     height: 333px;
     background-size: contain;
     background-repeat: no-repeat;
-    // margin: auto;
   }
   .orange_car {
     background-image: url("../content/img/13.jpg");
@@ -448,7 +441,6 @@ body {
     height: 333px;
     background-size: contain;
     background-repeat: no-repeat;
-    // margin: auto;
   }
   .brown_car {
     background-image: url("../content/img/ghhghg.jpg");
@@ -464,15 +456,13 @@ body {
     height: 333px;
     background-size: contain;
     background-repeat: no-repeat;
-    // margin: auto;
   }
 }
 .text_title_bottom {
-  // font-stile:floor($number: 0);
   font-size: 2.87rem;
-  font-weight: 300;
+  font-weight: 500;
   letter-spacing: 1px;
-  margin: 60px 170px 0px;
+  margin: 26px 152px 0px;
   font-style: normal;
   text-align: center;
   display: flex;
@@ -483,7 +473,6 @@ body {
   flex-direction: row-reverse;
 }
 .title_bottom {
-  // font-stile:floor($number: 0);
   font-size: 18px;
   font-weight: 300;
   letter-spacing: 1px;
@@ -503,6 +492,7 @@ body {
   font-family: "Times New Roman", Times, serif;
   text-align: left;
   word-break: break-all;
+  margin: -4% 0% 0%;
 }
 .announcement_ziro {
   font-size: 20px;
@@ -579,7 +569,9 @@ body {
   border-radius: 95px;
   white-space: nowrap;
 }
-
+.button_announcement:hover {
+  background-color: #0f046c;
+}
 @media screen and (max-width: 768px) {
   .three_ad_blocks {
     flex-direction: column;
@@ -673,11 +665,33 @@ body {
   cursor: pointer;
   border-radius: 95px;
 }
+.button:hover {
+  background-color: #0f046c;
+}
+.learn_more:hover {
+  background-color: #6ee419;
+}
+.learn_more_blu:hover {
+  background-color: #0f046c;
+}
+.learn_more_blus:hover {
+  background-color: #0f046c;
+}
+.learn_more_green:hover {
+  background-color: #042b04;
+}
+.learn_more_pink:hover {
+  background-color: #aa3434;
+}
+.learn_more_red:hover {
+  background-color: #d28989;
+}
+
 .learn_more_blu {
   background-color: #354eb4;
   border: none;
   color: white;
-  padding: 15px 87px;
+  padding: 15px 80px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -690,7 +704,7 @@ body {
   background-color: #354eb4;
   border: none;
   color: white;
-  padding: 15px 32px;
+  padding: 18px 1px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -699,7 +713,7 @@ body {
   cursor: pointer;
   border-radius: 95px;
   white-space: nowrap;
-  margin-top: -39px;
+  margin-top: -34px;
 }
 .learn_more_red {
   background-color: white;
@@ -717,7 +731,7 @@ body {
 .learn_more_green {
   background-color: #5b6149;
   border: none;
-  padding: 15px 87px;
+  padding: 19px 77px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -730,7 +744,7 @@ body {
 .learn_more_pink {
   background-color: #945a5c;
   border: none;
-  padding: 15px 97px;
+  padding: 19px 99px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -741,19 +755,19 @@ body {
   color: white;
 }
 .rent_car {
-  height: 500px;
+  height: 815px;
   .blu_picture {
     background-color: #3151aa;
     height: 412px;
-    width: 560px;
-    margin: 252px 254px 96px 169px;
+    width: 429px;
+    position: relative;
+    left: 201px;
+    top: 215px;
   }
   .woman_picture {
     background-image: url("../content/img/woman.jpg");
-    height: 533px;
-    width: 612px;
-    margin: -709px 253px 0px 253px;
-    object-position: 50% 50%;
+    height: 536px;
+    width: 473px;
     z-index: 1;
     // background-size: contain;
     background-repeat: no-repeat;
@@ -764,40 +778,52 @@ body {
     display: flex;
     background-position: 50% 2%;
     object-fit: cover;
+    position: absolute;
+    left: 259px;
+    top: 4255px;
   }
   .rent_text {
     height: 534px;
     width: 570px;
-    margin: -631px 253px 0px 806px;
     object-position: 50% 50%;
     z-index: 2;
     background-color: white;
     position: relative;
     transition-duration: inherit;
+    position: absolute;
+    left: 690px;
+    top: 4337px;
+    right: 0px;
     .rent_for_text {
       height: 500px;
       width: 410px;
       background-position: center;
-      margin: 3px 2px;
+      margin: 46px  57px 2px;
       background-color: none;
-      margin: auto;
     }
+    .rent {
+      background-position: center;
+      background-color: none;
+      font-size: 18px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      font-style: sans-serif;
+    } 
   }
   .title_woman {
     font-size: 44px;
     font-weight: 100;
     letter-spacing: 1px;
-    margin: 0px 174px 24px 1px;
     font-style: sans-serif;
-    // text-align: center;
+    text-align: center;
     display: flex;
-    // justify-content: center; /*Центрирование по горизонтали*/
+    justify-content: center; /*Центрирование по горизонтали*/
     align-items: center; /*Центрирование по вертикали */
-    // color: #ffffff;
+    color: #ffffff;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
       Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
       sans-serif Arial, Helvetica, sans-serif;
-    // word-break: break-all;
+    word-break: break-all;
   }
 }
 .before {
@@ -823,57 +849,38 @@ body {
   margin-top: 60px;
   margin: auto;
   .happy_people {
-    height: 700px;
-    width: 1300px;
+    height: 444px;
+    width: 940px;
     gap: 3;
     display: flex;
     flex-wrap: wrap;
     grid-gap: 30px;
+    align-content: flex-start;
+    margin-top: 60px;
+
+    .imidge_conteiner {
+      width: 293px;
+      height: 180px;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
     .happy_women {
       background-image: url("../content/img/hggh.jpg");
-      width: 360px;
-      height: 221px;
-      background-repeat: no-repeat;
-      background-size: contain;
-      pointer-events: auto;
-      pointer-events: initial;
     }
     .pair {
       background-image: url("../content/img/jhj.jpg");
-      width: 360px;
-      max-height: 221px;
-      background-repeat: no-repeat;
-      background-size: contain;
-      pointer-events: auto;
-      pointer-events: initial;
     }
     .pair_girl {
       background-image: url("../content/img/ghgh.jpg");
-      width: 360px;
-      height: 221px;
-      background-repeat: no-repeat;
-      background-size: contain;
     }
     .pair_old {
       background-image: url("../content/img/ty.jpg");
-      width: 360px;
-      height: 221px;
-      background-repeat: no-repeat;
-      background-size: contain;
     }
     .pair_one {
       background-image: url("../content/img/fg.jpg");
-      width: 360px;
-      height: 221px;
-      background-repeat: no-repeat;
-      background-size: contain;
     }
     .pair_none {
       background-image: url("../content/img/ghghh.jpg");
-      width: 360px;
-      height: 221px;
-      background-repeat: no-repeat;
-      background-size: contain;
     }
   }
   .info_title {
@@ -896,30 +903,34 @@ body {
   flex-wrap: wrap;
   justify-content: space-around;
   margin-inline: auto;
-  margin-top: 60px;
+  margin-top: 6px;
+  position: relative;
 
   .cars {
     background-image: url("../content/img/fxgdf.jpg");
-    width: 920px;
-    height: 395px;
+    width: 902px;
+    height: 325px;
     background-repeat: no-repeat;
     background-size: contain;
     margin: 54px auto 0;
     object-position: 50% 9%;
     background-color: aliceblue;
     background-size: contain;
-    z-index: 1;
-    position: absolute;
+    background-position: 0px 0px;
+    background-size: cover;
+    // z-index: 1;
+    // position: absolute;
   }
 }
 .animaition {
   background-color: #5b6149;
-  height: 450px;
-  width: 1900px;
+  height: 220px;
+  width: 1200px;
   will-change: auto;
   animation-duration: 1500ms;
   margin-top: 10%;
   position: relative;
+  max-height: auto;
 }
 .contact_box {
   height: 381px;
@@ -977,16 +988,14 @@ form {
   margin-right: 30px;
 }
 input {
-  width: 358px;
-  height: 52px;
+  width: 293px;
+  height: 65px;
   padding-left: 15px;
   border-radius: 42px;
-  border: 2px solid #324b4e;
+  border: 2px solid white;
   background: #cbcbc6;
   outline: none;
   position: relative;
-  transition: 0.3s linear;
-  margin: 0% 5% 4% 4%;
 }
 input:focus {
   width: 300px;
@@ -1000,11 +1009,11 @@ button {
   top: -2px;
   right: 0;
 }
-button:before {
-  content: "\f002";
-  font-family: FontAwesome;
-  color: #324b4e;
-}
+// button:before {
+//   content: "\f002";
+//   font-family: FontAwesome;
+//   color: #324b4e;
+// }
 .whatsapp_img {
   background-image: url(../content/img/73.png);
   width: 64px;
@@ -1025,12 +1034,12 @@ button:before {
 }
 .website {
   height: 123px;
-  background-color: rgba(51, 51, 51);
+  background-color: rgb(51, 51, 51);
 }
 .sampie_end_text {
   height: 140px;
   width: 50%;
-  margin: 0px auto  0px;
+  margin: 0px auto 0px;
   border-top: 40px;
   display: flex;
 }
