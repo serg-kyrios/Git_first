@@ -19,13 +19,13 @@ body {
 .header .menu_btn {
   display: flex;
   align-items: center;
-  position: absolute;
   top: 25px;
   right: 15%;
   width: 26px;
   height: 26px;
   cursor: pointer;
   z-index: 1;
+  position: fixed;
 }
 .header .menu_btn > span,
 .header .menu_btn > span::before,
@@ -51,18 +51,18 @@ body {
   visibility: hidden;
   top: 0;
   left: -100%;
-  width: 300px;
-  height: 100%;
+  width: 260px;
+  height: 2000px;
   margin: 0;
   padding: 80px 0;
   list-style: none;
-  background-color: black;
+  background-color: rgba(12, 0, 0, 0.9);
   box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
   transition-duration: 0.25s;
-  position: absolute;
   z-index: 1;
 }
-.header .menu_item {
+
+.menu_item {
   display: block;
   padding: 12px 100px;
   color: white;
@@ -72,61 +72,62 @@ body {
   text-decoration: none;
   transition-duration: 0.25s;
 }
-.header .menu_item:hover {
+
+.menu_item:hover {
   background-color: #cfd8dc;
 }
-.header #menu_toggle:checked ~ .menu-btn > span {
+
+#menu_toggle:checked ~ .menu-btn > span {
   transform: rotate(45deg);
 }
-.header #menu_toggle:checked ~ .menu-btn > span::before {
+
+#menu_toggle:checked ~ .menu-btn > span::before {
   top: 0;
   transform: rotate(0);
 }
-.header #menu_toggle:checked ~ .menu-btn > span::after {
+
+#menu_toggle:checked ~ .menu-btn > span::after {
   top: 0;
   transform: rotate(90deg);
 }
-.header #menu_toggle:checked ~ .menubox {
+
+#menu_toggle:checked ~ .menubox {
   visibility: visible;
   left: 0;
 }
-.header #menu_toggle {
+
+#menu_toggle {
   opacity: 0;
 }
 
-.secshion_one_car {
-  height: 820px;
-  width: 100%;
-  background-color: none;
-}
-.secshion_one_car .one_car {
+.one_car {
   background-image: url("../content/img/one_car.jpg");
   height: 744px;
   width: 100%;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
-  max-height: 831px;
-  margin-bottom: 20%;
   display: flex;
-  -o-object-fit: cover;
-     object-fit: cover;
-  position: absolute;
-  top: -26px;
+  position: relative;
+  top: -39px;
   left: 0px;
 }
-.secshion_one_car .three_ad_blocks {
+
+.three_ad_blocks {
   height: 356px;
   width: 894px;
   background-position: bottom;
   display: flex;
   justify-content: center;
-  flex: 1;
   max-width: 100%;
   transition-duration: inherit;
-  top: 0px;
+  top: 231px;
   min-height: 336px;
-  margin: 555px auto 0;
+  position: relative;
+  flex-wrap: wrap;
+  padding: 0 30px;
 }
 
 .advertising_first {
@@ -191,9 +192,24 @@ body {
 
 .text {
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 100;
   letter-spacing: 1px;
-  margin: 0px 0 0;
+  margin: 37px 74px 0;
+  font-style: sans-serif;
+  text-align: center;
+  display: flex;
+  justify-content: center; /*Центрирование по горизонтали*/
+  align-items: center; /*Центрирование по вертикали */
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  word-break: break-all;
+}
+
+.text_blocks {
+  font-size: 18px;
+  font-weight: 100;
+  letter-spacing: 1px;
+  margin: -6px 34px 0;
   font-style: sans-serif;
   text-align: center;
   display: flex;
@@ -333,10 +349,16 @@ body {
   color: #cfd8dc;
 }
 
+.four_text {
+  height: 40px;
+  width: 100%;
+  margin-top: 27px;
+}
+
 .for_text {
   height: 40px;
   width: 100%;
-  margin-top: 1%;
+  margin-top: 117px;
 }
 
 .bookind_box {
@@ -590,16 +612,6 @@ body {
   background-color: #0f046c;
 }
 
-@media screen and (max-width: 768px) {
-  .three_ad_blocks {
-    flex-direction: column;
-    align-items: center;
-    padding-top: 70%;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0px;
-  }
-}
 .best_offers_box {
   height: 381px;
   background-color: #5b6149;
@@ -634,7 +646,7 @@ body {
 }
 
 .learn_more:hover {
-  background-color: #6ee419;
+  background-color: #9aa194;
 }
 
 .learn_more_blu:hover {
@@ -654,7 +666,7 @@ body {
 }
 
 .learn_more_red:hover {
-  background-color: #d28989;
+  background-color: #d4abab;
 }
 
 .learn_more_blu {
@@ -731,16 +743,19 @@ body {
 
 .rent_car {
   height: 815px;
+  position: relative;
 }
-.rent_car .blu_picture {
+
+.blu_picture {
   background-color: #3151aa;
   height: 412px;
   width: 429px;
-  position: relative;
+  position: absolute;
   left: 201px;
   top: 215px;
 }
-.rent_car .woman_picture {
+
+.woman_picture {
   background-image: url("../content/img/woman.jpg");
   height: 536px;
   width: 473px;
@@ -755,10 +770,11 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
   position: absolute;
-  left: 259px;
-  top: 4255px;
+  left: 257px;
+  top: 54px;
 }
-.rent_car .rent_text {
+
+.rent_text {
   height: 534px;
   width: 570px;
   -o-object-position: 50% 50%;
@@ -769,17 +785,19 @@ body {
   transition-duration: inherit;
   position: absolute;
   left: 690px;
-  top: 4337px;
-  right: 0px;
+  top: 186px;
 }
-.rent_car .rent_text .rent_for_text {
+
+.rent_for_text {
   height: 500px;
   width: 410px;
   background-position: center;
   margin: 46px 57px 2px;
   background-color: none;
+  position: absolute;
 }
-.rent_car .rent_text .rent {
+
+.rent {
   background-position: center;
   background-color: none;
   font-size: 18px;
@@ -787,8 +805,9 @@ body {
   letter-spacing: 2px;
   font-style: sans-serif;
 }
-.rent_car .title_woman {
-  font-size: 44px;
+
+.title_woman {
+  font-size: 36px;
   font-weight: 100;
   letter-spacing: 1px;
   font-style: sans-serif;
@@ -796,13 +815,14 @@ body {
   display: flex;
   justify-content: center; /*Центрирование по горизонтали*/
   align-items: center; /*Центрирование по вертикали */
-  color: #ffffff;
+  color: #090000;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif Arial, Helvetica, sans-serif;
   word-break: break-all;
+  margin: 0% 5% 5% -21%;
 }
 
 .before {
-  margin: 30px 0px 24px 1px;
+  margin: 35px 30px 24px 1px;
   font-family: FontAwesome;
   color: #324b4e;
   font-size: 18px;
@@ -829,40 +849,49 @@ body {
   gap: 3;
   display: flex;
   flex-wrap: wrap;
-  grid-gap: 30px;
+  grid-gap: 10px;
   align-content: flex-start;
   margin-top: 60px;
 }
-.happy_people_box .happy_people .imidge_conteiner {
+
+.imidge_conteiner {
   width: 293px;
   height: 180px;
   background-repeat: no-repeat;
   background-size: cover;
 }
-.happy_people_box .happy_people .happy_women {
+
+.happy_women {
   background-image: url("../content/img/hggh.jpg");
 }
-.happy_people_box .happy_people .pair {
+
+.pair {
   background-image: url("../content/img/jhj.jpg");
 }
-.happy_people_box .happy_people .pair_girl {
+
+.pair_girl {
   background-image: url("../content/img/ghgh.jpg");
 }
-.happy_people_box .happy_people .pair_old {
+
+.pair_old {
   background-image: url("../content/img/ty.jpg");
 }
-.happy_people_box .happy_people .pair_one {
+
+.pair_one {
   background-image: url("../content/img/fg.jpg");
 }
-.happy_people_box .happy_people .pair_none {
+
+.pair_none {
   background-image: url("../content/img/ghghh.jpg");
 }
-.happy_people_box .info_title {
+
+.info_title {
   height: 94px;
 }
-.happy_people_box .info_text {
+
+.info_text {
   height: 100px;
-  width: 60%;
+  width: 90%;
   margin-top: 40px;
 }
 
@@ -924,7 +953,8 @@ body {
   height: 400px;
   display: flex;
 }
-.contact_box .all_contact_box .one_contact_box {
+
+.one_contact_box {
   height: 380px;
   width: 360px;
   display: flex;
@@ -934,7 +964,8 @@ body {
   flex-direction: column;
   margin-top: 30px;
 }
-.contact_box .all_contact_box .two_contact_box {
+
+.two_contact_box {
   height: 380px;
   width: 360px;
   display: flex;
@@ -943,7 +974,8 @@ body {
   align-items: center;
   flex-direction: column;
 }
-.contact_box .all_contact_box .three_contact_box {
+
+.three_contact_box {
   height: 380px;
   width: 360px;
   display: flex;
@@ -1004,14 +1036,16 @@ button {
   background-size: contain;
 }
 
-.Sample_text {
-  height: 123px;
+.sample_text {
+  height: 171px;
   background-color: #5b6149;
 }
 
 .website {
   height: 123px;
   background-color: rgb(51, 51, 51);
+  padding-top: 33px;
+  padding-left: 34%;
 }
 
 .sampie_end_text {
@@ -1020,4 +1054,305 @@ button {
   margin: 0px auto 0px;
   border-top: 40px;
   display: flex;
+}
+
+.pair_text {
+  top: 0%;
+  margin: auto;
+  align-items: center;
+  height: 400px;
+  width: 80%;
+  margin: 5% 5% 5% 5%;
+}
+
+@media screen and (max-width: 990px) {
+  .happy_people {
+    height: 444px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    grid-gap: 10px;
+  }
+  .rent_text {
+    left: 162px;
+    top: 462px;
+  }
+  .for_text {
+    margin-top: 15%;
+  }
+  .fort_text {
+    height: 40px;
+    width: 100%;
+    margin-top: 117px;
+  }
+  .three_ad_blocks {
+    height: 550px;
+    width: 570px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0%;
+    top: 163px;
+  }
+  .offers_box {
+    width: 95%;
+  }
+  .text_title {
+    margin: 0% 9% 0%;
+  }
+  .book_text {
+    width: 100%;
+  }
+  .red_car {
+    height: 1368px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .one_car {
+    height: 443px;
+  }
+  .three_ad_blocks {
+    height: 550px;
+    width: 570px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 51%;
+    top: 0px;
+  }
+  .for_text {
+    margin-top: 588px;
+  }
+  .advertising_first {
+    width: 510px;
+    height: 220px;
+  }
+  .advertising_first .faster {
+    display: flex;
+    flex-direction: column;
+    width: 227px;
+    height: 162px;
+    margin: auto;
+  }
+  .advertising_third {
+    width: 510px;
+    height: 220px;
+  }
+  .advertising_third .batter {
+    display: flex;
+    flex-direction: column;
+    width: 227px;
+    height: 162px;
+    margin: auto;
+  }
+  .advertising_second {
+    width: 510px;
+    height: 220px;
+  }
+  .advertising_second .rental {
+    display: flex;
+    flex-direction: column;
+    width: 255px;
+    height: 157px;
+    margin: auto;
+  }
+  .advantage_block {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    gap: 90px;
+  }
+  .advantage_block .dollar {
+    margin-left: 0px;
+  }
+  .advantage_block .day {
+    margin-left: 0px;
+  }
+  .advantage_block .box {
+    flex-direction: column;
+    gap: 30px;
+    width: 300px;
+    height: 130px;
+  }
+  .bookind_box {
+    height: 450px;
+    width: 100%;
+    margin: 0%;
+    justify-content: center;
+    display: flex;
+  }
+  .book_text {
+    flex-direction: column;
+    height: 410px;
+    margin: 11px -120px 0px 0px;
+    width: 90%;
+  }
+  .button {
+    margin: 88px 82px;
+  }
+  .car_advertising {
+    height: 100%;
+    width: 702px;
+    margin-left: -10%;
+  }
+  .best_offers_box {
+    height: 463px;
+  }
+  .offers_box {
+    width: 94%;
+  }
+  .red_car {
+    display: flex;
+  }
+  .text_title_bottom {
+    margin: 8% 5% -5%;
+  }
+  .title_bottom {
+    margin: 15% 7% 14%;
+  }
+  .blu_picture {
+    left: 400px;
+    top: 246px;
+    left: 42px;
+    margin: auto;
+  }
+  .woman_picture {
+    left: 100px;
+  }
+  .rent_text {
+    left: 131px;
+    top: 462px;
+  }
+  .rent_car {
+    height: 1033px;
+    width: 90%;
+  }
+  .imidge_conteiner {
+    width: 472px;
+    height: 306px;
+    margin-left: 100px;
+  }
+  .pair_text {
+    margin-top: 232%;
+  }
+  .happy_people {
+    min-height: 2060px;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    flex-direction: row;
+  }
+  .info_text {
+    width: 100%;
+  }
+  .text_title {
+    margin: -2% 13% -3%;
+  }
+  .cars {
+    max-height: 232px;
+    max-width: 564px;
+  }
+  .red_black_cars {
+    align-content: flex-start;
+    height: 577px;
+  }
+  .all_contact_box {
+    flex-direction: column;
+    margin-top: 140px;
+  }
+  .contact_box {
+    height: 1200px;
+    margin-top: 0%;
+  }
+  .one_contact_box {
+    width: 500px;
+    gap: 40px;
+  }
+  .two_contact_box {
+    width: 500px;
+    gap: 40px;
+    margin-top: 20px;
+  }
+  .three_contact_box {
+    width: 500px;
+    gap: 30px;
+  }
+  .sampie_end_text {
+    width: 100%;
+  }
+  .website {
+    padding-left: 25%;
+  }
+}
+@media screen and (max-width: 533px) {
+  .one_car {
+    height: 310px;
+  }
+  .three_ad_blocks {
+    height: 550px;
+    width: 603px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 70%;
+    top: -131px;
+  }
+  .for_text {
+    margin-top: 400px;
+  }
+  .rent_text {
+    top: 582px;
+    left: 5px;
+  }
+  .rent_car {
+    height: 1175px;
+  }
+  .woman_picture {
+    width: 355px;
+    height: 451px;
+    left: 82px;
+  }
+  .blu_picture {
+    top: 136px;
+    width: 358px;
+  }
+  .bookind_box {
+    flex-direction: column;
+  }
+  .book_text {
+    margin: 0px;
+  }
+  .button {
+    margin: 15% 7%;
+  }
+  .three_ad_blocks {
+    height: 356px;
+    width: 894px;
+    background-position: bottom;
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    transition-duration: inherit;
+    top: 261px;
+    min-height: 336px;
+    position: relative;
+    flex-wrap: wrap;
+    padding: 0 94px;
+  }
+  .for_text {
+    margin-top: 537px;
+  }
+  .best_offers_box {
+    height: 500px;
+  }
+  .imidge_conteiner {
+    width: 400px;
+    height: 150px;
+    margin-left: 30px;
+  }
+  .happy_people_box {
+    height: 1140px;
+  }
 }
