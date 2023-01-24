@@ -2,7 +2,6 @@ body {
   margin: 0px;
   height: 3000px;
 }
-
 .header {
   width: 100%;
   height: 3%;
@@ -103,8 +102,7 @@ body {
   background-size: cover;
   display: flex;
   position: relative;
-  top: -39px;
-  left: 0px;
+  top: -73px;
 }
 .three_ad_blocks {
   height: 356px;
@@ -358,10 +356,10 @@ body {
 }
 .book_text {
   width: 80%;
+  height: 210px;
   display: flex;
   margin: auto;
   justify-content: center;
-  position: static;
 }
 .button {
   background-color: #3c496f;
@@ -372,10 +370,10 @@ body {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin: 88px 51px;
+  margin: 73px 51px;
   cursor: pointer;
   border-radius: 95px;
-  transition-duration: 3000ms;
+  transition-duration: 2000ms;
 }
 .oll_car {
   width: 100%;
@@ -591,21 +589,25 @@ body {
 }
 .button_announcement:hover {
   background-color: #0f046c;
-  transition-duration: 3000ms;
+  transition-duration: 2000ms;
 }
 
 .best_offers_box {
   height: 381px;
   background-color: #5b6149;
   text-align: center;
+  flex-direction: column;
   padding: 4%;
   margin-top: 30px;
 }
 .offers_box {
-  height: 296px;
+  height: 96px;
   width: 82%;
   background-position: center;
   margin: auto;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
 }
 .learn_more {
   background-color: white;
@@ -622,31 +624,31 @@ body {
 }
 .button:hover {
   background-color: #0f046c;
-  transition-duration: 3000ms;
+  transition-duration: 2000ms;
 }
 .learn_more:hover {
   background-color: #9aa194;
-  transition-duration: 3000ms;
+  transition-duration: 2000ms;
 }
 .learn_more_blu:hover {
   background-color: #0f046c;
-  transition-duration: 3000ms;
+  transition-duration: 2000ms;
 }
 .learn_more_blus:hover {
   background-color: #0f046c;
-  transition-duration: 3000ms;
+  transition-duration: 2000ms;
 }
 .learn_more_green:hover {
   background-color: #042b04;
-  transition-duration: 3000ms;
+  transition-duration: 2000ms;
 }
 .learn_more_pink:hover {
   background-color: #aa3434;
-  transition-duration: 3000ms;
+  transition-duration: 2000ms;
 }
 .learn_more_red:hover {
   background-color: #d4abab;
-  transition-duration: 3000ms;
+  transition-duration: 2000ms;
 }
 
 .learn_more_blu {
@@ -721,13 +723,15 @@ body {
   width: 100%;
   margin: auto;
   justify-content: center;
+  align-items: center;
+  display: flex;
 }
 
 .red_car_oll {
   position: absolute;
-  width: 50%;
-  height: 800px;
-  margin: auto;
+  // width: 50%;
+  // height: 800px;
+  // margin: auto;
   position: relative;
 }
 
@@ -736,8 +740,8 @@ body {
   height: 474px;
   width: 445px;
   position: absolute;
-  left: 93px;
-  top: 31%;
+  left: -460px;
+  top: -200px;
 }
 .woman_picture {
   background-image: url("../content/img/woman.jpg");
@@ -748,19 +752,19 @@ body {
   background-size: cover;
   max-height: 831px;
   position: absolute;
-  left: 168px;
-  top: 14%;
+  left: -388px;
+  top: -329px;
 }
 .rent_text {
   height: 534px;
-  width: 570px;
+  width: 450px;
   object-position: 50% 50%;
   z-index: 2;
   background-color: white;
   transition-duration: inherit;
   position: absolute;
-  left: 610px;
-  bottom: 2%;
+  left: 59px;
+  top: -179px;
 }
 .rent_for_text {
   height: 500px;
@@ -865,8 +869,9 @@ body {
 }
 .info_text {
   height: 100px;
-  width: 100%;
-  margin-top: 40px;
+  width: 90%;
+  margin: 10% 5% 3% 5%;
+  padding: auto;
 }
 
 .red_black_cars {
@@ -912,7 +917,6 @@ body {
 .contact_box {
   height: 381px;
   max-width: 1078px;
-  // height: 1824px;
   font-style: normal;
   text-align: center;
   background-position: bottom;
@@ -924,7 +928,8 @@ body {
   margin-top: 60px;
   .all_contact_box {
     height: 400px;
-    // width: 70%;
+    justify-content: center;
+
     display: flex;
   }
 }
@@ -1005,11 +1010,16 @@ button {
   height: 171px;
   background-color: #5b6149;
 }
+.web {
+  justify-content: center;
+  margin: auto;
+  display: flex;
+  padding-top: 35px;
+}
 .website {
   height: 123px;
   background-color: rgb(51, 51, 51);
-  padding-top: 33px;
-  padding-left: 34%;
+  margin: auto;
 }
 .sampie_end_text {
   height: 140px;
@@ -1032,6 +1042,7 @@ a {
 p {
   color: rgb(255, 255, 255);
 }
+
 @media screen and (min-width: 1024px) {
   .happy_people_box {
     height: 935px;
@@ -1040,8 +1051,8 @@ p {
 
 @media screen and (max-width: 1024px) {
   .rent_text {
-    left: 162px;
-    top: 462px;
+    left: 293px;
+    top: 122px;
   }
   .for_text {
     margin-top: 15%;
@@ -1071,13 +1082,14 @@ p {
   }
 
   .rent_car {
-    height: 1033px;
+    height: 710px;
     width: 90%;
 
     .red_car_oll {
       width: 800px;
-      height: 800px;
-      margin: auto;
+      height: 1085px;
+      left: 100px;
+      top: 200px;
     }
   }
   .happy_people_box {
@@ -1129,6 +1141,17 @@ p {
   }
   .all_contact_box {
     flex-wrap: wrap;
+  }
+  .blu_picture {
+    left: -136px;
+    top: 141px;
+  }
+  .woman_picture {
+    left: -71px;
+    top: 6px;
+  }
+  .offers_box {
+    margin-top: 30px;
   }
 }
 
@@ -1219,7 +1242,7 @@ p {
     margin: 88px 82px;
   }
   .car_advertising {
-    height: 100%;
+    height: 2673px;
     width: 702px;
     margin-left: -10%;
   }
@@ -1231,6 +1254,7 @@ p {
   }
   .red_car {
     display: flex;
+    height: 1214px;
   }
   .text_title_bottom {
     margin: 8% 5% -5%;
@@ -1238,22 +1262,27 @@ p {
   .title_bottom {
     margin: 15% 7% 14%;
   }
+  .red_car_oll {
+    width: 646px;
+    height: 969px;
+  }
   .blu_picture {
-    left: 400px;
-    top: 246px;
-    left: 42px;
+    top: 29px;
+    left: -29px;
     margin: auto;
   }
   .woman_picture {
-    left: 100px;
+    left: 35px;
+    top: -101px;
   }
   .rent_text {
-    left: 131px;
-    top: 462px;
+    left: 77px;
+    top: 286px;
   }
   .rent_car {
-    height: 1033px;
+    height: 1360px;
     width: 90%;
+    margin-top: -154px;
   }
   .imidge_conteiner {
     width: 472px;
@@ -1284,7 +1313,6 @@ p {
     height: 577px;
   }
   .all_contact_box {
-    // flex-direction: column;
     margin-top: 140px;
     height: 1100px;
   }
@@ -1308,16 +1336,13 @@ p {
   .sampie_end_text {
     width: 100%;
   }
-  .website {
-    padding-left: 25%;
-  }
+
   .happy_people_box {
     height: 2635px;
   }
   .happy_people {
     width: 598px;
     height: 635px;
-    // justify-content: center;
     flex-direction: column;
     flex-wrap: nowrap;
     display: flex;
@@ -1352,76 +1377,132 @@ p {
     background-size: contain;
     margin: 54px auto 0;
   }
-}
-@media screen and (max-width: 533px) {
-  .one_car {
-    height: 310px;
-  }
-  .three_ad_blocks {
-    height: 550px;
-    width: 603px;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 70%;
-    top: -131px;
-  }
-  .for_text {
-    margin-top: 400px;
-  }
 
-  .rent_text {
-    top: 582px;
-    left: 5px;
+  @media screen and (max-width: 533px) {
+    .one_car {
+      height: 310px;
+    }
+    .three_ad_blocks {
+      height: 550px;
+      width: 603px;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 70%;
+      top: -131px;
+    }
+    .for_text {
+      margin-top: 400px;
+    }
+
+    .rent_text {
+      top: 582px;
+      left: 5px;
+    }
+    .rent_car {
+      height: 1175px;
+    }
+    .woman_picture {
+      width: 355px;
+      height: 451px;
+      left: 82px;
+    }
+    .blu_picture {
+      top: 136px;
+      width: 358px;
+    }
+    .bookind_box {
+      flex-direction: column;
+    }
+    .book_text {
+      margin: 0px;
+    }
+    .button {
+      margin: 15% 7%;
+    }
+    .three_ad_blocks {
+      height: 356px;
+      width: 894px;
+      background-position: bottom;
+      display: flex;
+      justify-content: center;
+      max-width: 100%;
+      transition-duration: inherit;
+      top: 261px;
+      min-height: 336px;
+      position: relative;
+      flex-wrap: wrap;
+      padding: 0 94px;
+    }
+    .for_text {
+      margin-top: 537px;
+    }
+    .best_offers_box {
+      height: 500px;
+    }
+    .imidge_conteiner {
+      width: 400px;
+      height: 150px;
+      margin-left: 30px;
+    }
+    .happy_people_box {
+      height: 1140px;
+    }
   }
-  .rent_car {
-    height: 1175px;
+  .red_car {
+    display: flex;
+    height: 1214px;
   }
-  .woman_picture {
-    width: 355px;
-    height: 451px;
-    left: 82px;
+  .text_title_bottom {
+    margin: 8% 5% -5%;
+  }
+  .title_bottom {
+    margin: 15% 7% 14%;
+  }
+  .red_car_oll {
+    width: 646px;
+    height: 969px;
   }
   .blu_picture {
-    top: 136px;
-    width: 358px;
+    top: 29px;
+    left: -29px;
+    margin: auto;
   }
-  .bookind_box {
-    flex-direction: column;
+  .woman_picture {
+    left: 35px;
+    top: -101px;
   }
-  .book_text {
-    margin: 0px;
+  .rent_text {
+    left: 77px;
+    top: 286px;
   }
-  .button {
-    margin: 15% 7%;
+  .rent_car {
+    height: 1360px;
+    width: 90%;
+    margin-top: -154px;
+  }
+}
+@media screen and (max-width: 533px) {
+  .happy_people_box {
+    height: 935px;
   }
   .three_ad_blocks {
-    height: 356px;
-    width: 894px;
-    background-position: bottom;
-    display: flex;
-    justify-content: center;
-    max-width: 100%;
-    transition-duration: inherit;
-    top: 261px;
-    min-height: 336px;
-    position: relative;
-    flex-wrap: wrap;
-    padding: 0 94px;
+    top: 269px;
+  }
+  .one_car {
+    height: 267px;
   }
   .for_text {
-    margin-top: 537px;
+    margin-top: 702px;
   }
-  .best_offers_box {
-    height: 500px;
+  .advantage_block {
+    height: 400px;
+    flex-wrap: wrap;
+    display: flex;
+    width: 390px;
   }
-  .imidge_conteiner {
-    width: 400px;
-    height: 150px;
-    margin-left: 30px;
-  }
-  .happy_people_box {
-    height: 1140px;
+  .free {
+    margin-left: 20px;
   }
 }
